@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#dragDiv {
+				display: block;
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				cursor: move;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dragDiv"></div>
+	</body>
+	<script src="js/jquery-1.11.1.min.js" ></script>
+	<script src="js/drag.js" ></script>
+	<script>
+		$("#dragDiv").drag({
+			maxRangeW: [0, 500],
+			maxRangeH: [0, 500]
+		});
+	</script>
+</html>
